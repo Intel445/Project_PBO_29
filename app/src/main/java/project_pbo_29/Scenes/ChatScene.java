@@ -99,6 +99,12 @@ public class ChatScene{
         stage.setScene(chatScene);
         ScreenSizeUtils.restoreScreenSize(stage);
         stage.show();
+        welcomeMessage();
+    }
+
+    private void welcomeMessage() {
+        String welcomeText = "Halo!, selamat datang di Eco-Resolver";
+        addMessage(chatArea, welcomeText, false);
     }
 
     private void addMessage(VBox chatArea, String message, boolean isUser) {
